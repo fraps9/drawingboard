@@ -1,0 +1,117 @@
+@import "reset.css";
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(243, 244, 251);
+}
+canvas {
+  width: 800px;
+  height: 600px;
+  border: 2px solid #ccc;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 35px;
+}
+div {
+  height: 600px;
+  text-align: center;
+}
+.tool_wrap {
+  padding: 3% 0;
+  box-sizing: border-box;
+}
+button {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+#strokeW {
+  width: 200px;
+}
+div > span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-left: 8px;
+}
+div > span:nth-child(1) {
+  background: #000;
+}
+div > span:nth-child(2) {
+  background: #fff;
+}
+div > span:nth-child(3) {
+  background: #e74c3c;
+}
+div > span:nth-child(4) {
+  background: #ff9500;
+}
+div > span:nth-child(5) {
+  background: #ffcc00;
+}
+div > span:nth-child(6) {
+  background: #2ecc71;
+}
+div > span:nth-child(7) {
+  background: #3498db;
+}
+div > span:nth-child(8) {
+  background: #0579ff;
+}
+div > span:nth-child(9) {
+  background: #5856d6;
+}
+div > div {
+  height: auto;
+  margin-top: 20px;
+}
+#imgFile {
+  display: none;
+}
+div > div > label {
+  margin: 0 auto;
+}
+label {
+  display: block;
+  width: 140px;
+  height: 30px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  line-height: 30px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  font-weight: bold;
+}
+#text{
+  all: unset;
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0, 1px 3px rgba(0, 0, 0, 0.08);
+}
